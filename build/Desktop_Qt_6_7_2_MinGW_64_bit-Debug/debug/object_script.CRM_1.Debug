@@ -1,0 +1,10 @@
+debug/addclientdialog.o
+debug/clientlist.o
+debug/databasemanager.o
+debug/logindialog.o
+debug/main.o
+debug/mainwindow.o
+debug/moc_addclientdialog.o
+debug/moc_clientlist.o
+debug/moc_logindialog.o
+debug/moc_mainwindow.o

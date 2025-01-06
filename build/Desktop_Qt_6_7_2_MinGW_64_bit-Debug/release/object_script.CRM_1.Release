@@ -1,0 +1,10 @@
+release/addclientdialog.o
+release/clientlist.o
+release/databasemanager.o
+release/logindialog.o
+release/main.o
+release/mainwindow.o
+release/moc_addclientdialog.o
+release/moc_clientlist.o
+release/moc_logindialog.o
+release/moc_mainwindow.o
