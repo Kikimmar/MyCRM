@@ -1,4 +1,5 @@
 #include "addclientdialog.h"
+#include "clientmanager.h"
 
 AddClientDialog::AddClientDialog(QWidget *parent) : QDialog(parent)
 {
@@ -54,7 +55,28 @@ AddClientDialog::AddClientDialog(QWidget *parent) : QDialog(parent)
 
 void AddClientDialog::onSaveButtonClicked()
 {
-    // Логика сохранения данных о клиенте в БД (сделать проверку на наличие клиента уже в БД)
-    QMessageBox::information(this, "Успех!", "Данные о клиенте успешно сохранены");
-    accept();
+    ClientManager clientManager;
+
+    // Получаем данные из полей
+    QString companyName = companyNameInput->text();
+    QString inn = innInput->text();
+    QString address = addresInput->text();
+    QString lastName = lastNameInput->text();
+    QString firstName = firstNameInput->text();
+    QString middleName = middleNameInput->text();
+    QString phone = phoneInput->text();
+    QString email = emailInput->text();
+    QString notes = notesinput->toPlainText();
+
+    // Сохраняем клиента в БД
+    if (clientManager.addClient(companyName, inn, address,
+                                lastName, firstName, middleName, phone, email, notes))
+    {
+        QMessageBox::information(this, "Успех", "Клиент успешно добавлен!");
+        accept();
+    }
+    else
+    {
+        QMessageBox::warning(this, "Ошибка", "Не удалось добавить клиента.");
+    }
 }

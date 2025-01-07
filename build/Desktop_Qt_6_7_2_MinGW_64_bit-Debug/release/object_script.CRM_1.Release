@@ -1,5 +1,6 @@
 release/addclientdialog.o
 release/clientlist.o
+release/clientmanager.o
 release/databasemanager.o
 release/logindialog.o
 release/main.o

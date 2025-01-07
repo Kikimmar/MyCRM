@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     addclientdialog.cpp \
     clientlist.cpp \
+    clientmanager.cpp \
     databasemanager.cpp \
     logindialog.cpp \
     main.cpp \
@@ -19,6 +20,7 @@ SOURCES += \
 HEADERS += \
     addclientdialog.h \
     clientlist.h \
+    clientmanager.h \
     databasemanager.h \
     logindialog.h \
     mainwindow.h

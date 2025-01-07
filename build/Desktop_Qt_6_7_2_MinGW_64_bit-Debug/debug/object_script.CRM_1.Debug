@@ -1,5 +1,6 @@
 debug/addclientdialog.o
 debug/clientlist.o
+debug/clientmanager.o
 debug/databasemanager.o
 debug/logindialog.o
 debug/main.o
