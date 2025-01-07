@@ -7,9 +7,11 @@
 class DatabaseManager
 {
     public:
-        DatabaseManager();
+        static DatabaseManager& getInstance();
 
         bool connectToDatabase();
+
+        void closeDatabase();
 
         bool validateUser(const QString &username, const QString &password);  // проверка логина и пароля
 
@@ -18,7 +20,12 @@ class DatabaseManager
         bool addUser(const QString &username, const QString &password); //  добавление пользователя
 
     private:
+        DatabaseManager();
+        ~DatabaseManager();
+
+        DatabaseManager(const DatabaseManager&) = delete;  // удаляем оператор копирования
+        DatabaseManager& operator=(const DatabaseManager&) = delete;  // удаляем оператор присваивания
+
         QSqlDatabase db;
 };
-
 #endif // DATABASEMANAGER_H

@@ -19,7 +19,6 @@ public:
                    const QString &phone, const QString &email, const QString &notes);
 
 private:
-    DatabaseManager dbManager;  // для работы с БД
 };
 
 #endif // CLIENTMANAGER_H

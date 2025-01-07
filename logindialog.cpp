@@ -32,7 +32,7 @@ LoginDialog::LoginDialog(QWidget *parent) : QDialog(parent)
 // Слот для входа по логину и паролю
 void LoginDialog::onLoginButtonClicked()
 {
-    DatabaseManager dbManager;
+    DatabaseManager& dbManager = DatabaseManager::getInstance();
 
     // Получаем введенные данные
     QString username = usernameInput->text();
@@ -56,7 +56,7 @@ void LoginDialog::onLoginButtonClicked()
 // Слот для регистрации
 void LoginDialog::onRegisterButtonClicked()
 {
-    DatabaseManager dbManager;
+    DatabaseManager& dbManager = DatabaseManager::getInstance();
 
     QString username = usernameInput->text();
     QString password = passwordInput->text();

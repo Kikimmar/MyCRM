@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "logindialog.h"
+#include "databasemanager.h"
 
 #include <QApplication>
 
@@ -12,6 +13,12 @@ int main(int argc, char *argv[])
 
     // Подключаем сигнал rejected для выхода из приложения
     QObject::connect(&loginDialog, &QDialog::rejected, &app, &QCoreApplication::quit);
+
+    DatabaseManager& dbManager = DatabaseManager::getInstance();
+    if (!dbManager.connectToDatabase())
+    {
+        return -1;
+    }
 
     // Запускаем диалог в модальном режиме
     if (loginDialog.exec() == QDialog::Accepted)

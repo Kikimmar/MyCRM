@@ -4,9 +4,17 @@
 #include <QCryptographicHash>
 #include <QDebug>
 
-DatabaseManager::DatabaseManager()
+DatabaseManager::DatabaseManager() {}
+
+DatabaseManager::~DatabaseManager()
 {
-    connectToDatabase();
+    closeDatabase();
+}
+
+DatabaseManager& DatabaseManager::getInstance()
+{
+    static DatabaseManager instance;
+    return instance;
 }
 
 bool DatabaseManager::connectToDatabase()
@@ -87,3 +95,11 @@ bool DatabaseManager::addUser(const QString &username, const QString &password)
     return true;
 }
 
+void DatabaseManager::closeDatabase()
+{
+    if (db.isOpen())
+    {
+        db.close();
+        qDebug() << "База данных закрыта";
+    }
+}
