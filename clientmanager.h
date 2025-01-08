@@ -4,9 +4,6 @@
 #include "databasemanager.h"
 
 #include <QString>
-#include <QSqlQuery>
-#include <QSqlError>
-#include <QDebug>
 
 class ClientManager
 {

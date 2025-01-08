@@ -1,9 +1,10 @@
 #include "clientmanager.h"
 
-ClientManager::ClientManager()
-{
-    // подключение осуществляется в DatabaseManager, потому конструктор пустой
-}
+#include <QSqlQuery>
+#include <QSqlError>
+#include <QDebug>
+
+ClientManager::ClientManager() {}
 
 bool ClientManager::addClient(const QString &companyName, const QString &inn, const QString &address,
                    const QString &lastName, const QString &firstName, const QString &middleName,
