@@ -52,6 +52,13 @@ AddClientDialog::AddClientDialog(QWidget *parent) : QDialog(parent)
 
 void AddClientDialog::onSaveButtonClicked()
 {
+    DatabaseManager& dbManager = DatabaseManager::getInstance();
+
+    if (!dbManager.connectToDatabase())
+    {
+        QMessageBox::warning(this, "Ошибка", "Не удалось подключиться к базе данных.");
+    }
+
     ClientManager clientManager;
 
     // Получаем данные из полей

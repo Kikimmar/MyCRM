@@ -5,9 +5,10 @@
 #include <QWidget>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include <QListView>
+#include <QTableView>
 #include <QMessageBox>
 #include <QPointer>
+#include <QStandardItemModel>
 
 class MainWindow : public QMainWindow
 {
@@ -22,8 +23,9 @@ private slots:
 
 private:
     QPointer<QVBoxLayout> layout;
-    QPointer<QListView> listView;
+    QPointer<QTableView> tableView;
     QPointer<QPushButton> addClientButton;  // кнопка "Добавить клиента"
+    QStandardItemModel *model;
 
     void updateClientList();
 };

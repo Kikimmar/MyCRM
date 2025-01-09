@@ -344,6 +344,8 @@ debug/moc_addclientdialog.cpp: ../../addclientdialog.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtGui/QRegularExpressionValidator \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtGui/qvalidator.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtCore/QPointer \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtCore/qpointer.h \
 		debug/moc_predefs.h \
 		F:/programs/Qt/6.7.2/mingw_64/bin/moc.exe
 	F:\programs\Qt\6.7.2\mingw_64\bin\moc.exe $(DEFINES) --include F:/training/Qt/CRM_1/MyCRM/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/moc_predefs.h -IF:/programs/Qt/6.7.2/mingw_64/mkspecs/win32-g++ -IF:/training/Qt/CRM_1/MyCRM -IF:/programs/Qt/6.7.2/mingw_64/include -IF:/programs/Qt/6.7.2/mingw_64/include/QtWidgets -IF:/programs/Qt/6.7.2/mingw_64/include/QtGui -IF:/programs/Qt/6.7.2/mingw_64/include/QtSql -IF:/programs/Qt/6.7.2/mingw_64/include/QtCore -I. -IF:/programs/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IF:/programs/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IF:/programs/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IF:/programs/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IF:/programs/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IF:/programs/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\addclientdialog.h -o debug\moc_addclientdialog.cpp
@@ -746,8 +748,8 @@ debug/moc_mainwindow.cpp: ../../mainwindow.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
-		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/QListView \
-		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qlistview.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/QTableView \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qtableview.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qframe.h \
@@ -767,6 +769,10 @@ debug/moc_mainwindow.cpp: ../../mainwindow.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qmessagebox.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtCore/QPointer \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtCore/qpointer.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtGui/QStandardItemModel \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtGui/qstandarditemmodel.h \
 		debug/moc_predefs.h \
 		F:/programs/Qt/6.7.2/mingw_64/bin/moc.exe
 	F:\programs\Qt\6.7.2\mingw_64\bin\moc.exe $(DEFINES) --include F:/training/Qt/CRM_1/MyCRM/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug/moc_predefs.h -IF:/programs/Qt/6.7.2/mingw_64/mkspecs/win32-g++ -IF:/training/Qt/CRM_1/MyCRM -IF:/programs/Qt/6.7.2/mingw_64/include -IF:/programs/Qt/6.7.2/mingw_64/include/QtWidgets -IF:/programs/Qt/6.7.2/mingw_64/include/QtGui -IF:/programs/Qt/6.7.2/mingw_64/include/QtSql -IF:/programs/Qt/6.7.2/mingw_64/include/QtCore -I. -IF:/programs/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IF:/programs/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IF:/programs/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IF:/programs/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IF:/programs/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IF:/programs/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\mainwindow.h -o debug\moc_mainwindow.cpp
@@ -1010,6 +1016,8 @@ debug/addclientdialog.o: ../../addclientdialog.cpp ../../addclientdialog.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtGui/QRegularExpressionValidator \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtGui/qvalidator.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtCore/QPointer \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtCore/qpointer.h \
 		../../clientmanager.h \
 		../../databasemanager.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/QSqlDatabase \
@@ -1017,12 +1025,7 @@ debug/addclientdialog.o: ../../addclientdialog.cpp ../../addclientdialog.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/qtsqlglobal.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/qtsql-config.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/qtsqlexports.h \
-		F:/programs/Qt/6.7.2/mingw_64/include/QtCore/QString \
-		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/QSqlQuery \
-		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/qsqlquery.h \
-		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/QSqlError \
-		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/qsqlerror.h \
-		F:/programs/Qt/6.7.2/mingw_64/include/QtCore/QDebug
+		F:/programs/Qt/6.7.2/mingw_64/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\addclientdialog.o ..\..\addclientdialog.cpp
 
 debug/clientmanager.o: ../../clientmanager.cpp ../../clientmanager.h \
@@ -1696,8 +1699,8 @@ debug/main.o: ../../main.cpp ../../mainwindow.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
-		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/QListView \
-		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qlistview.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/QTableView \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qtableview.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qframe.h \
@@ -1717,6 +1720,10 @@ debug/main.o: ../../main.cpp ../../mainwindow.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qmessagebox.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtCore/QPointer \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtCore/qpointer.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtGui/QStandardItemModel \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtGui/qstandarditemmodel.h \
 		../../logindialog.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/QDialog \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/QLineEdit \
@@ -1935,8 +1942,8 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
-		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/QListView \
-		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qlistview.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/QTableView \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qtableview.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qframe.h \
@@ -1956,6 +1963,10 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qmessagebox.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtCore/QPointer \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtCore/qpointer.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtGui/QStandardItemModel \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtGui/qstandarditemmodel.h \
 		../../addclientdialog.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/QDialog \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/QLineEdit \
@@ -1970,7 +1981,22 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/QFormLayout \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/qformlayout.h \
 		F:/programs/Qt/6.7.2/mingw_64/include/QtWidgets/QLayout \
-		F:/programs/Qt/6.7.2/mingw_64/include/QtGui/QRegularExpressionValidator
+		F:/programs/Qt/6.7.2/mingw_64/include/QtGui/QRegularExpressionValidator \
+		../../clientmanager.h \
+		../../databasemanager.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/QSqlDatabase \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/qsqldatabase.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/qtsqlglobal.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/qtsql-config.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/qtsqlexports.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtCore/QString \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/QSqlQuery \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/qsqlquery.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/QSqlError \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/qsqlerror.h \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtCore/QDebug \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/QSqlRecord \
+		F:/programs/Qt/6.7.2/mingw_64/include/QtSql/qsqlrecord.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\..\mainwindow.cpp
 
 debug/moc_addclientdialog.o: debug/moc_addclientdialog.cpp 

@@ -19,6 +19,11 @@ DatabaseManager& DatabaseManager::getInstance()
 
 bool DatabaseManager::connectToDatabase()
 {
+    if (db.isOpen())
+    {
+        return true;  // если соединение уже закрыто
+    }
+
     db = QSqlDatabase::addDatabase("QPSQL");
     db.setHostName("localhost");
     db.setDatabaseName("postgres");
@@ -100,6 +105,7 @@ void DatabaseManager::closeDatabase()
     if (db.isOpen())
     {
         db.close();
+        QSqlDatabase::removeDatabase(db.connectionName());
         qDebug() << "База данных закрыта";
     }
 }
