@@ -30,6 +30,11 @@ EditClientDialog::EditClientDialog(ClientData data, QWidget *parent)
     formLayout->addRow("ИНН:", innInput);
     formLayout->addRow("Юридический адрес:", addressInput);
 
+    // Заголовок "Контакт"
+    QLabel *contactLabel = new QLabel("Контактное лицо", this);
+    contactLabel->setStyleSheet("font-weight: bold; font-size: 14px;");
+    formLayout->addRow(contactLabel);
+
     formLayout->addRow("Фамилия:", lastNameInput);
     formLayout->addRow("Имя:", firstNameInput);
     formLayout->addRow("Отчество:", middleNameInput);

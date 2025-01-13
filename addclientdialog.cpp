@@ -30,6 +30,11 @@ AddClientDialog::AddClientDialog(QWidget *parent) : QDialog(parent)
     emailInput = new QLineEdit(this);
     emailInput->setValidator(new QRegularExpressionValidator(QRegularExpression(R"((\w+)(\.\w+)*@(\w+)(\.\w+)+)"), this));
 
+    // Заголовок "Контакт"
+    QLabel *contactLabel = new QLabel("Контактное лицо", this);
+    contactLabel->setStyleSheet("font-weight: bold; font-size: 14px;");
+    formLayout->addRow(contactLabel);
+
     formLayout->addRow("Фамилия:", lastNameInput);
     formLayout->addRow("Имя:", firstNameInput);
     formLayout->addRow("Отчество:", middleNameInput);

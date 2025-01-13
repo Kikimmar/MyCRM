@@ -9,7 +9,7 @@
 #include <QPushButton>
 #include <QMessageBox>
 #include <QRegularExpressionValidator>
-#include <QPointer>
+#include <QLabel>
 
 class AddClientDialog : public QDialog
 {
@@ -22,15 +22,15 @@ private slots:
     void onSaveButtonClicked();  // слои для обработки кнопки "Сохранить"
 
 private:
-    QPointer<QLineEdit> companyNameInput;  // поле для названия компании
-    QPointer<QLineEdit> innInput;  // поле для ИНН
-    QPointer<QLineEdit> addressInput;  // поле для юр адреса
-    QPointer<QLineEdit> lastNameInput;  // пооле для фамилии
-    QPointer<QLineEdit> firstNameInput;  // поле для имени
-    QPointer<QLineEdit> middleNameInput;  // поле для отчества
-    QPointer<QLineEdit> phoneInput;  // поле для телефона
-    QPointer<QLineEdit> emailInput;  // поле для эл почты
-    QPointer<QTextEdit> notesInput;  // поле для заметок
+    QLineEdit *companyNameInput;  // поле для названия компании
+    QLineEdit *innInput;  // поле для ИНН
+    QLineEdit *addressInput;  // поле для юр адреса
+    QLineEdit *lastNameInput;  // пооле для фамилии
+    QLineEdit *firstNameInput;  // поле для имени
+    QLineEdit *middleNameInput;  // поле для отчества
+    QLineEdit *phoneInput;  // поле для телефона
+    QLineEdit *emailInput;  // поле для эл почты
+    QTextEdit *notesInput;  // поле для заметок
 };
 
 #endif // ADDCLIENTDIALOG_H

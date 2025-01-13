@@ -11,7 +11,7 @@
 #include <QPushButton>
 #include <QMessageBox>
 #include <QRegularExpressionValidator>
-#include <QPointer>
+#include <QLabel>
 
 class EditClientDialog : public QDialog
 {
@@ -25,15 +25,15 @@ private slots:
     void onSaveButtonClicked();
 
 private:
-    QPointer<QLineEdit> companyNameInput;
-    QPointer<QLineEdit> innInput;
-    QPointer<QLineEdit> addressInput;
-    QPointer<QLineEdit> lastNameInput;
-    QPointer<QLineEdit> firstNameInput;
-    QPointer<QLineEdit> middleNameInput;
-    QPointer<QLineEdit> phoneInput;
-    QPointer<QLineEdit> emailInput;
-    QPointer<QTextEdit> notesInput;
+    QLineEdit *companyNameInput;
+    QLineEdit *innInput;
+    QLineEdit *addressInput;
+    QLineEdit *lastNameInput;
+    QLineEdit *firstNameInput;
+    QLineEdit *middleNameInput;
+    QLineEdit *phoneInput;
+    QLineEdit *emailInput;
+    QTextEdit *notesInput;
 
     ClientData clientData;  // сохранение даннх клиента для редактирования
 };
