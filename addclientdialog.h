@@ -11,19 +11,6 @@
 #include <QRegularExpressionValidator>
 #include <QPointer>
 
-struct ClientData
-{
-    QString companyName;
-    QString inn;
-    QString address;
-    QString lastName;
-    QString firstName;
-    QString middleName;
-    QString phone;
-    QString email;
-    QString notes;
-};
-
 class AddClientDialog : public QDialog
 {
     Q_OBJECT

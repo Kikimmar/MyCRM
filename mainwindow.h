@@ -6,9 +6,10 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QTableView>
+#include <QHeaderView>
 #include <QMessageBox>
-#include <QPointer>
 #include <QStandardItemModel>
+
 
 class MainWindow : public QMainWindow
 {
@@ -20,13 +21,15 @@ public:
 
 private slots:
     void onAddClientButtonClicked();  // слот для обработки кнопки "Добавить клиента"
+    void onTableViewDoubleClicked(const QModelIndex &index);
 
 private:
-    QPointer<QVBoxLayout> layout;
-    QPointer<QTableView> tableView;
-    QPointer<QPushButton> addClientButton;  // кнопка "Добавить клиента"
+    QVBoxLayout *layout;
+    QTableView *tableView;
+    QPushButton *addClientButton;  // кнопка "Добавить клиента"
     QStandardItemModel *model;
 
     void updateClientList();
+    // void setupTableView();
 };
 #endif // MAINWINDOW_H

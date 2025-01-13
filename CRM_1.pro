@@ -12,14 +12,17 @@ SOURCES += \
     addclientdialog.cpp \
     clientmanager.cpp \
     databasemanager.cpp \
+    editclientdialog.cpp \
     logindialog.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     addclientdialog.h \
+    clientdata.h \
     clientmanager.h \
     databasemanager.h \
+    editclientdialog.h \
     logindialog.h \
     mainwindow.h
 

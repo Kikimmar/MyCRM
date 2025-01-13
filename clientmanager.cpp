@@ -33,3 +33,28 @@ bool ClientManager::addClient(const QString &companyName, const QString &inn, co
 
     return true;
 }
+
+bool ClientManager::updateClient(const ClientData &client)
+{
+    QSqlQuery query;
+    query.prepare("UPDATE clients SET company_name = :company_name, inn = :inn, address = :address,"
+                  "last_name = :last_name, first_name = :first_name, middle_name = :middle_name,"
+                  "phone = :phone, email = :email, notes = :notes WHERE inn = :inn");  // уникальность по ИНН
+
+    query.bindValue(":company_name", client.companyName);
+    query.bindValue(":inn", client.inn);  // Используем ИНН для поиска записи
+    query.bindValue(":address", client.address);
+    query.bindValue(":last_name", client.lastName);
+    query.bindValue(":first_name", client.firstName);
+    query.bindValue(":middle_name", client.middleName);
+    query.bindValue(":phone", client.phone);
+    query.bindValue(":email", client.email);
+    query.bindValue(":notes", client.notes);
+
+    if (!query.exec())
+    {
+        qDebug() << "Ошибка добавления клиента:" << query.lastError().text();
+        return false;
+    }
+    return true;
+}
